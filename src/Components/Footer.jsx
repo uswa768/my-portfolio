@@ -1,5 +1,7 @@
- import React from 'react'
-import { FaGithub, FaLinkedin, FaFacebook, FaTwitter} from 'react-icons/fa'
+import React from 'react'
+import { FaGithub, FaLinkedin, FaFacebook, FaTwitter } from 'react-icons/fa'
+import SocialIcon from './SocialIcon'
+import FooterItem from './FooterItem'
 
 const Footer = () => {
   return (
@@ -33,17 +35,17 @@ const Footer = () => {
             justify-between items-center'>
                 <p>&copy; {new Date().getFullYear()} Uswa. All Right Reserved</p>
 
+                {/* Social Icons — Component use kiya! */}
                 <div className='flex space-x-4 my-4 md:my-0'>
-                    <a href="" className='text-gray-400 hover:text-white'><FaFacebook/></a>
-                    <a href="" className='text-gray-400 hover:text-white'><FaLinkedin/></a>
-                    <a href="" className='text-gray-400 hover:text-white'><FaTwitter/></a>
-                    <a href="https://github.com/uswa768" className='text-gray-400 hover:text-white'>
-                        <FaGithub/>
-                    </a>
+                    <SocialIcon href="" icon={<FaFacebook/>} />
+                    <SocialIcon href="" icon={<FaLinkedin/>} />
+                    <SocialIcon href="" icon={<FaTwitter/>} />
+                    <SocialIcon href="https://github.com/uswa768" icon={<FaGithub/>} />
                 </div>
+
                 <div className='flex space-x-4'>
-                    <a href="" className='text-gray-400 hover:text-white'>Privacy</a>
-                    <a href="" className='text-gray-400 hover:text-white'>Terms of Services</a>
+                    <FooterItem href="" label="Privacy" />
+                    <FooterItem href="" label="Terms of Services" />
                 </div>
             </div>
         </div>
