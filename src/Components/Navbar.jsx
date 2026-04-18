@@ -11,7 +11,7 @@ const Navbar = () => {
             <a href="#about"className='hover:text-grey-400'>About</a>
             <a href="#Service"className='hover:text-grey-400'>Services</a>
             <a href="#projects"className='hover:text-grey-400'>Project</a>
-            <a href="#Contact"className='hover:text-grey-400'>Contact Me</a>
+            <a href="#Contact"className='hover:text-grey-400'>Contact</a>
          </div>
          <button className='bg-linear-to-r from-green-400 to-blue-500 text-white hidden md:inline
          transform trancition-transform duration-300 hover:scale-105 px-3 py-2 rounded-full'>Contact Me</button>
